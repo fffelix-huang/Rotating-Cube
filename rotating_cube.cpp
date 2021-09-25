@@ -17,7 +17,7 @@ const point light = {-1, 0, -1};
 const char shade[] = ".,-~:;=!*#$@";
 
 inline float dot(const point& v1, const point& v2) {
-	return {get<0>(v1) * get<0>(v2) + get<1>(v1) * get<1>(v2) + get<2>(v1) * get<2>(v2)};
+	return (get<0>(v1) * get<0>(v2) + get<1>(v1) * get<1>(v2) + get<2>(v1) * get<2>(v2));
 }
 
 inline void rotate_x(point& p, const float& c, const float& s) {
