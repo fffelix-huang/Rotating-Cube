@@ -7,13 +7,11 @@
 #include <time.h>
 #include <tchar.h>
 
-#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
-
 using namespace std;
 
 typedef tuple<float, float, float> point;
 
-const int N = 10, height = N << 2, width = N << 2;
+const int N = 10, height = N * 4, width = N * 4;
 const point light = {-1, 0, -1};
 const char shade[] = ".,-~:;=!*#$@";
 
